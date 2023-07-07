@@ -217,7 +217,7 @@ body{
     .m-game__wrapper {
       background-image: url(./assets/spinspin.png);
       position: absolute;
-      top:-250px;
+      top:-20%;
       left:20%;
       background-size: contain;
       background-position: 100%;
@@ -234,7 +234,7 @@ body{
 
     .de{
       background-image: url(./assets/de.png);
-      top:-92px;
+      top:0.5%;
       z-index: 10;
       position: absolute;
       left:33%;
@@ -251,7 +251,7 @@ body{
     .arrow__wrapper{
     
       position:absolute;
-      top: 85px;
+      top: 14%;
       left:48.1%;
       z-index: 100
     } 
@@ -283,8 +283,8 @@ body{
       width: 240px;
       position:absolute;
       color:#9f070e;
-      top:63%;
-      left:34%;
+      top:65%;
+      left:36%;
       transform: rotate(-45deg);
       padding-top:10px
     }
@@ -292,7 +292,7 @@ body{
       width: 240px;
       position:absolute;
       top:56%;
-      left:-2%;
+      left:0%;
       transform: rotate(-0deg);
       padding-top:10px
     }
@@ -308,7 +308,7 @@ body{
     .m-game__text:nth-child(5) {
       width: 60px;
       position:absolute;
-      top:42.5%;
+      top:41.5%;
       left:27.5%;
       transform: rotate(90deg);
       padding-top:30px
@@ -317,16 +317,16 @@ body{
       width: 50px;
       color:#9f070e;
       position:absolute;
-      top:40%;
-      left:44%;
+      top:38%;
+      left:42%;
       transform: rotate(135deg);
       padding-top:30px
     } 
     .m-game__text:nth-child(7) {
       width: 40px;
       position:absolute;
-      top:40.5%;
-      left:61%;
+      top:39%;
+      left:60%;
       transform: rotate(180deg);
       
     } 
@@ -334,8 +334,8 @@ body{
       width: 40px;
       color:#9f070e;
       position:absolute;
-      top:45%;
-      left:77%;
+      top:44%;
+      left:78%;
       transform: rotate(225deg);
   
     } 
@@ -348,7 +348,7 @@ body{
     .gift{
     margin: 0; 
     transform: rotate(180deg);
-    font-size: 10px; 
+    font-size: 8px; 
     font-weight: 500;
     }
 
@@ -357,6 +357,180 @@ body{
 
   
 
+  @media only screen and (max-width:400px) {
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    
+    }
+    .m-game {
+      overflow-y: hidden;
+      position: relative; 
+      }
+      .nen{
+        width: 100%;
+        height: 100vh;
+      }
+      .logo{
+      position: absolute;
+      top:0;
+      right:10px;
+      }
+      .logo img{
+        width:80px;
+      }
+      .title{
+        position :absolute;
+        top:20px;
+      }
+      .title img {
+        width:200px;
+      }
+      /* .spin__wrapper{
+        position: relative;
+      } */
+
+      .m-game__wrapper {
+        background-image: url(./assets/spinspin.png);
+        position: absolute;
+        top:-18%;
+        left:20%;
+        background-size: contain;
+        background-position: 100%;
+        background-repeat:no-repeat ;
+        display: block;
+        width: 60%;
+        z-index: 1;
+        height: 100vh;
+        border-radius: 100%;
+        z-index: 100;
+        transition: transform 10s cubic-bezier(0.5, 0.2, 0, 1);
+        ;
+      }
+  
+      .de{
+        background-image: url(./assets/de.png);
+        top:24.5%;
+        z-index: 10;
+        position: absolute;
+        left:33%;
+        background-size: contain;
+        background-position: 100%;
+        background-repeat:no-repeat ;
+        width: 33%;
+        z-index: 1;
+        height: 100vw;
+        border-radius: 100%;
+        
+      }
+  
+      .arrow__wrapper{
+      
+        position:absolute;
+        top: 15%;
+        left:47.8%;
+        z-index: 200
+      } 
+      .arrow__wrapper img{
+        
+        width:15;
+      } 
+  
+      .m-game__text {
+        width: 160px;
+        position: absolute;
+        text-align: center;
+    
+        color: #fff;
+        
+        transform-origin: 0 50%;
+        padding-left: 3%;
+      }
+      .m-game__text:nth-child(1) {
+        width:56px;
+        position:absolute;
+        top:51.5%;
+        left:77%;
+        transform: rotate(-90deg);
+        padding-top:10px
+        
+      }
+      .m-game__text:nth-child(2) {
+        
+        position:absolute;
+        color:#9f070e;
+        top:65%;
+        left:28%;
+        transform: rotate(-45deg);
+        padding-top:10px
+      }
+      .m-game__text:nth-child(3) {
+
+        position:absolute;
+        top:57%;
+        left:0%;
+        transform: rotate(-0deg);
+        padding-top:10px
+      }
+      .m-game__text:nth-child(4) {
+        
+        color:#9f070e;
+        position:absolute;
+        top:40%;
+        left:-3%;
+        transform: rotate(45deg);
+        padding-top:30px
+      }
+      .m-game__text:nth-child(5) {
+        width: 60px;
+        position:absolute;
+        top:41%;
+        left:27.5%;
+        transform: rotate(90deg);
+        padding-top:30px
+      }
+      .m-game__text:nth-child(6) {
+        width: 50px;
+        color:#9f070e;
+        position:absolute;
+        top:38%;
+        left:46%;
+        transform: rotate(135deg);
+        padding-top:30px
+      } 
+      .m-game__text:nth-child(7) {
+        width: 40px;
+        position:absolute;
+        top:39.5%;
+        left:61%;
+        transform: rotate(180deg);
+        
+      } 
+      .m-game__text:nth-child(8) {
+        width: 40px;
+        color:#9f070e;
+        position:absolute;
+        top:45%;
+        left:77%;
+        transform: rotate(225deg);
+    
+      } 
+      .price{
+         margin: 0;
+        font-size: 12px; 
+        transform: rotate(180deg);
+        font-weight: 700;
+      }
+      .gift{
+      margin: 0; 
+      transform: rotate(180deg);
+      font-size: 7px; 
+      font-weight: 500;
+      }
+  
+  
+  }
   @media only screen and (max-width:430px) {
     body{
       margin: 0;
@@ -525,7 +699,7 @@ body{
       .gift{
       margin: 0; 
       transform: rotate(180deg);
-      font-size: 8px; 
+      font-size: 7px; 
       font-weight: 500;
       }
   
@@ -700,7 +874,7 @@ body{
       .gift{
       margin: 0; 
       transform: rotate(180deg);
-      font-size: 8px; 
+      font-size: 6px; 
       font-weight: 500;
       }
   
