@@ -1,25 +1,49 @@
-.m-game {
-    width: 500px;
-    height: 500px;
-    margin: 100px auto;
-    position: relative;
+@media only screen and (min-width:1200px) {
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  .nen{
+  height: 100vh;
+  width: 100%;
+  vertical-align: middle;
+  overflow-y: hidden;
+  }
+  .logo{
+  position: absolute;
+  top:0;
+  right:20px;
+  }
+  .logo img{
+    width:400px
+  }
+  .title{
+    position :absolute;
+    top:0;
+  }
+  .m-game {
+  overflow-y: hidden;
+  position: relative;
+    
   }
   .m-game__wrapper {
-    display: block;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    padding-bottom: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 7s cubic-bezier(0.25, 0.1, 0, 1);
-  }
-  .m-game__bg {
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
+    
+    background-image: url(./assets/spinspin.png);
+    top:0;
     position: absolute;
-    top: 0;
-    left: 0;
+    left:32%;
+    background-size: contain;
+    background-position: 100%;
+    background-repeat:no-repeat ;
+    display: block;
+    width: 40%;
+    height: 100vh;
+    border-radius: 100%;
+    transition: transform 10s cubic-bezier(0.6, 0.4, 0, 1);
+    z-index:100
+    
   }
   .m-game__start {
     display: block;
@@ -32,45 +56,305 @@
     z-index: 10;
     cursor: pointer;
     transition: 0.3s;
+  
   }
-  .m-game__start:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+  .arrow__wrapper{
+    
+    position:absolute;
+    top: 177px;
+    left:50.5%;
+    z-index: 100
+  } 
+  .arrow__wrapper img{
+    
+    width:100%
+  } 
+  .arrow{
+    background-color: transparent;
   }
-  .m-game__start img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
-  }
-  .m-game__text {
-    width: 50%;
+  .de{
+    background-image: url(./assets/de.png);
+    top:730px;
+    z-index: 10;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
+    left:37%;
+    background-size: contain;
+    background-position: 100%;
+    background-repeat:no-repeat ;
+    width: 30%;
+    z-index: 1;
+    height: 100vh;
+    border-radius: 100%;
+    
+  }
+  .de img{
+    width: 85%;
+  }
+
+  .m-game__text {
+    width: 160px;
+    position: absolute;
     text-align: center;
+
     color: #fff;
-    font-size: 24px;
+    
     transform-origin: 0 50%;
     padding-left: 3%;
   }
   .m-game__text:nth-child(1) {
-    transform: translateY(-50%) rotate(-30deg);
+    width:240px;
+    position:absolute;
+    top:54%;
+    left:78%;
+    transform: rotate(-90deg);
+    padding-top:10px
+    
   }
   .m-game__text:nth-child(2) {
-    transform: translateY(-50%) rotate(-90deg);
+    width: 240px;
+    position:absolute;
+    color:#9f070e;
+    top:69%;
+    left:63%;
+    transform: rotate(-45deg);
+    padding-top:10px
   }
   .m-game__text:nth-child(3) {
-    transform: translateY(-50%) rotate(-150deg);
+    width: 240px;
+    position:absolute;
+    top:68%;
+    left:37%;
+    transform: rotate(-0deg);
+    padding-top:10px
   }
   .m-game__text:nth-child(4) {
-    transform: translateY(-50%) rotate(-210deg);
+    width: 240px;
+    color:#9f070e;
+    position:absolute;
+    top:55%;
+    left:19%;
+    transform: rotate(45deg);
+    padding-top:30px
   }
   .m-game__text:nth-child(5) {
-    transform: translateY(-50%) rotate(-270deg);
+    width: 240px;
+    
+    position:absolute;
+    top:34%;
+    left:21%;
+    transform: rotate(90deg);
+    padding-top:30px
   }
   .m-game__text:nth-child(6) {
-    transform: translateY(-50%) rotate(-330deg);
+    width: 240px;
+    color:#9f070e;
+    position:absolute;
+    top:21%;
+    left:40%;
+    transform: rotate(135deg);
+    padding-top:30px
+  } 
+  .m-game__text:nth-child(7) {
+    width: 160px;
+    position:absolute;
+    top:22%;
+    left:60%;
+    transform: rotate(180deg);
+    
+  } 
+  .m-game__text:nth-child(8) {
+    width: 180px;
+    color:#9f070e;
+    position:absolute;
+    top:34%;
+    left:77%;
+    transform: rotate(225deg);
+
+  } 
+  .price{
+    margin: 10px;
+    font-size: 46px; 
+    transform: rotate(180deg);
+    font-weight: 700;
   }
+  .gift{
+    margin: 0; 
+    transform: rotate(180deg);
+    font-size: 40px; 
+    font-weight: 500;
+  }
+  
+}
+
+@media only screen and (max-width:640px) {
+  .m-game {
+    overflow-y: hidden;
+    position: relative;
+      
+    }
+
+    .nen{
+    
+    width: 100%;
+    
+    
+    }
+    .logo{
+    position: absolute;
+    top:0;
+    right:10px;
+    }
+    .logo img{
+      width:70px;
+    }
+    .title{
+      position :absolute;
+      top:10px;
+    }
+    .title img {
+      width:300px
+    }
+    .m-game__wrapper {
+      background-image: url(./assets/spinspin.png);
+      position: absolute;
+      top:-275px;
+      left:22%;
+      background-size: contain;
+      background-position: 100%;
+      background-repeat:no-repeat ;
+      display: block;
+      width: 50%;
+      z-index: 1;
+      height: 100vh;
+      border-radius: 100%;
+      z-index: 100;
+      transition: transform 10s cubic-bezier(0.5, 0.2, 0, 1);
+      ;
+    }
+
+    .de{
+      background-image: url(./assets/de.png);
+      top:-150px;
+      z-index: 10;
+      position: absolute;
+      left:32%;
+      background-size: contain;
+      background-position: 100%;
+      background-repeat:no-repeat ;
+      width: 30%;
+      z-index: 1;
+      height: 100vh;
+      border-radius: 100%;
+      
+    }
+
+    .arrow__wrapper{
+    
+      position:absolute;
+      top: 85px;
+      left:45.2%;
+      z-index: 100
+    } 
+    .arrow__wrapper img{
+      
+      width:15%
+    } 
+
+    .m-game__text {
+      width: 160px;
+      position: absolute;
+      text-align: center;
+  
+      color: #fff;
+      
+      transform-origin: 0 50%;
+      padding-left: 3%;
+    }
+    .m-game__text:nth-child(1) {
+      width:56px;
+      position:absolute;
+      top:51.5%;
+      left:75%;
+      transform: rotate(-90deg);
+      padding-top:10px
+      
+    }
+    .m-game__text:nth-child(2) {
+      width: 240px;
+      position:absolute;
+      color:#9f070e;
+      top:62%;
+      left:22%;
+      transform: rotate(-45deg);
+      padding-top:10px
+    }
+    .m-game__text:nth-child(3) {
+      width: 240px;
+      position:absolute;
+      top:54%;
+      left:-13%;
+      transform: rotate(-0deg);
+      padding-top:10px
+    }
+    .m-game__text:nth-child(4) {
+      width: 240px;
+      color:#9f070e;
+      position:absolute;
+      top:41%;
+      left:-11%;
+      transform: rotate(45deg);
+      padding-top:30px
+    }
+    .m-game__text:nth-child(5) {
+      width: 50px;
+      
+      position:absolute;
+      top:43%;
+      left:28%;
+      transform: rotate(90deg);
+      padding-top:30px
+    }
+    .m-game__text:nth-child(6) {
+      width: 50px;
+      color:#9f070e;
+      position:absolute;
+      top:41%;
+      left:47%;
+      transform: rotate(135deg);
+      padding-top:30px
+    } 
+    .m-game__text:nth-child(7) {
+      width: 40px;
+      position:absolute;
+      top:42%;
+      left:62%;
+      transform: rotate(180deg);
+      
+    } 
+    .m-game__text:nth-child(8) {
+      width: 40px;
+      color:#9f070e;
+      position:absolute;
+      top:46%;
+      left:79%;
+      transform: rotate(225deg);
+  
+    } 
+    .price{
+       margin: 0;
+      font-size: 12px; 
+      transform: rotate(180deg);
+      font-weight: 700;
+    }
+    .gift{
+    margin: 0; 
+    transform: rotate(180deg);
+    font-size: 8px; 
+    font-weight: 500;
+    }
+
+
+  }
+
+
+
