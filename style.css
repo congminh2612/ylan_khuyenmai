@@ -59,16 +59,12 @@ body{
   
   }
   .arrow__wrapper{
-    
     position:absolute;
     top: 177px;
     left:50.5%;
     z-index: 100
   } 
-  .arrow__wrapper img{
-    
-    width:100%
-  } 
+
   .arrow{
     background-color: transparent;
   }
@@ -92,12 +88,10 @@ body{
   }
 
   .m-game__text {
-    width: 160px;
+
     position: absolute;
     text-align: center;
-
     color: #fff;
-    
     transform-origin: 0 50%;
     padding-left: 3%;
   }
