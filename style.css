@@ -30,7 +30,7 @@ body{
   .m-game__wrapper {
     overflow: hidden;
     
-    background-image: url(./assets/spinspin.png);
+    background-image: url("./assets/spinspin.png");
     top:0;
     position: absolute;
     left:32%;
@@ -73,7 +73,7 @@ body{
     background-color: transparent;
   }
   .de{
-    background-image: url(./assets/de.png);
+    background-image: url("./assets/de.png");
     top:730px;
     z-index: 10;
     position: absolute;
