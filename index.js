@@ -16,7 +16,7 @@ $(function () {
 
     var deg =
       Math.floor(Math.random() * prizeCount) * angleMultiplier +
-      360 * 5 +
+      360 * 7 +
       oldDeg;
 
     $hat.data("rotate", deg);

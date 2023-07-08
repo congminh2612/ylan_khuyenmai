@@ -1,10 +1,24 @@
-@media only screen and (min-width:1200px) {
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ .m-game{
+  position: relative;
+  overflow: hidden;
+ }
+@media only screen and (min-width:1500px) {
   body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
    }
-  
+   .title-bot{
+    display: none;
+   }
+  .title-top{
+    display: none;
+  }
    .m-game{
     position: relative;
     overflow-y: hidden;
@@ -48,12 +62,12 @@
    }
    .spin_arrow{
     position: absolute;
-    top: 192px;
+    top: 186px;
     left:51.5%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 50%;
+    width: 58%;
    }
    .footer_spin{
     
@@ -77,8 +91,189 @@
   }
    
 }
+@media only screen and (min-width:1200px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .title-bot{
+    display: none;
+   }
+  .title-top{
+    display: none;
+  }
+  
+   .m-game{
+    position: relative;
+    overflow-y: hidden;
+   }
+  
+   .nen{
+    width: 100%;
+    height: 100vh;
+   }
+   .logo {
+    position: absolute;
+    top: 10px;
+    right:20px;
+  
+   }
+   .logo img{
+    width:200px
+   }
+   .title{
+    position: absolute;
+    top:20px
+   }
+   .title img{
+    width: 50%;
+   }
+   .spin__wrapper{
+     position: absolute;
+     top:10px;
+     left:50%;
+     transform: translateX(-45%);
+   }
+   .spin_container{
+    transition: transform 5s ease-in-out;
+  
+   }
+   .spin_container img{
+    width:800px
+   }
+   .spin {
+    position: relative;
+   }
+   .spin_arrow{
+    position: absolute;
+    top: 132px;
+    left:52.9%;
+    transform: translateX(-50%);
+   }
+   .spin_arrow img{
+    width: 38%;
+   }
+   .footer_spin{
+    
+    position: absolute;
+    top:565px;
+    left:54%;
+    transform: translateX(-50%);
+    z-index: -100;
+  }
+  .footer_spin img{
+    width: 80%;
+  }
+  .notification{
+    width: 600px;
+    position:absolute;
+    text-align: center;
+    top:80px;
+    left:54%;
+    transform: translateX(-50%);
+    color:red;
+    font-size: 21px;
+    font-weight: 600;
+  }
+   
+}
+
+@media only screen and (max-width:1199px) and (min-width:768px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .title-bot{
+    display: none;
+   }
+  .title-top{
+    display: none;
+  }
+  
+   .m-game{
+    position: relative;
+    overflow-y: hidden;
+   }
+  
+   .nen{
+    width: 100%;
+    height: 100vh;
+   }
+   .logo {
+    position: absolute;
+    top: 10px;
+    right:20px;
+  
+   }
+   .logo img{
+    width:150px
+   }
+   .title{
+    position: absolute;
+    top:20px
+   }
+   .title img{
+    width: 60%;
+   }
+   .spin__wrapper{
+     position: absolute;
+     top:20px;
+     left:50%;
+     transform: translateX(-45%);
+   }
+   .spin_container{
+    transition: transform 5s ease-in-out;
+  
+   }
+   .spin_container img{
+    width:640px
+   }
+   .spin {
+    position: relative;
+   }
+   .spin_arrow{
+    position: absolute;
+    top: 105px;
+    left:54.3%;
+    transform: translateX(-50%);
+   }
+   .spin_arrow img{
+    width: 32%;
+   }
+   .footer_spin{
+    
+    position: absolute;
+    top:455px;
+    left:55.5%;
+    transform: translateX(-50%);
+    z-index: -100;
+  }
+  .footer_spin img{
+    width: 75%;
+  }
+  .notification{
+    width: 600px;
+    position:absolute;
+    text-align: center;
+    top:80px;
+    left:54%;
+    transform: translateX(-50%);
+    color:red;
+    font-size: 16px;
+    font-weight: 600;
+  }
+   
+}
+
+
 
 @media only screen and (max-width:480px){
+  .m-game{
+    position: relative;
+    overflow-y: hidden;
+   }
   .nen{
      width: 100%;
      height:100vh ;
@@ -93,16 +288,28 @@
     width:100px
    }
    .title{
-    position: absolute;
-    top:20px
+    display: none;
    }
-   .title img{
-    width: 55%;
+   .title-top{
+     position: absolute;
+     top:30px;
+     left:10px;
+   }
+   .title-top img{
+    width:100px;
+  }
+   .title-bot{
+    position: absolute;
+    top:650px;
+    left:10px;
+   }
+   .title-bot img{
+    width: 100px;
    }
    .spin__wrapper{
     position: absolute;
-    top:0px;
-    left:48%;
+    top:200px;
+    left:45%;
     transform: translateX(-45%);
   }
   .spin_container{
@@ -110,24 +317,24 @@
  
   }
   .spin_container img{
-   width:500px
+   width:450px
   }
    .spin {
     position: relative;
    }
    .spin_arrow{
     position: absolute;
-    top: 90px;
-    left:56.6%;
+    top: 80px;
+    left:57.3%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 18%;
+    width: 20%;
    }
    .footer_spin{
     
     position: absolute;
-    top:350px;
+    top:310px;
     left:52.5%;
     transform: translateX(-50%);
     z-index: -100;
@@ -139,7 +346,93 @@
   text-align: center;
     width: 340px;
     position:absolute;
-    top:490px;
+    top:200px;
+    left:54%;
+    transform: translateX(-50%);
+    color:red;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width:768px) and (min-width:481px){
+  .m-game{
+    position: relative;
+    overflow-y: hidden;
+   }
+  .nen{
+     width: 100%;
+     height:100vh ;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    right:20px;
+  
+   }
+   .logo img{
+    width:120px
+   }
+   .title{
+    display: none;
+   }
+   .title-top{
+     position: absolute;
+     top:30px;
+     left:10px;
+   }
+   .title-top img{
+    width:120px;
+  }
+   .title-bot{
+    position: absolute;
+    top:650px;
+    left:10px;
+   }
+   .title-bot img{
+    width: 120px;
+   }
+   .spin__wrapper{
+    position: absolute;
+    top:170px;
+    left:48%;
+    transform: translateX(-45%);
+  }
+  .spin_container{
+   transition: transform 5s ease-in-out;
+ 
+  }
+  .spin_container img{
+   width:550px
+  }
+   .spin {
+    position: relative;
+   }
+   .spin_arrow{
+    position: absolute;
+    top: 95px;
+    left:55.2%;
+    transform: translateX(-50%);
+   }
+   .spin_arrow img{
+    width: 30%;
+   }
+   .footer_spin{
+    
+    position: absolute;
+    top:380px;
+    left:52.5%;
+    transform: translateX(-50%);
+    z-index: -100;
+  }
+  .footer_spin img{
+    width: 90%;
+  }
+  .notification{
+  text-align: center;
+    width: 340px;
+    position:absolute;
+    top:200px;
     left:54%;
     transform: translateX(-50%);
     color:red;
