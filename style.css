@@ -347,13 +347,13 @@ body{
   }
   .notification{
     text-align: center;
-    width: 340px;
+    width: 350px;
     position:absolute;
     top:200px;
-    left:54%;
+    left:52%;
     transform: translateX(-50%);
     color:rgb(164, 5, 5);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
   }
 }
@@ -432,14 +432,14 @@ body{
     width: 90%;
   }
   .notification{
-  text-align: center;
-    width: 340px;
+    text-align: center;
+    width: 500px;
     position:absolute;
+    left:52%;
     top:200px;
-    left:54%;
     transform: translateX(-50%);
     color:rgb(164, 5, 5);
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 700;
   }
 }
