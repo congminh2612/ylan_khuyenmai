@@ -49,14 +49,14 @@ function calcResult(deg) {
   var prizeIndex = Math.floor(deg / angleMultiplier) % prizeCount;
 
   var prizeNames = [
-    "xóa xăm chân mày 299k",
-    "tắm trắng whitening 699k",
-    "xóa xăm hình nghệ thuật 99k",
-    "phun môi 999k",
-    "xóa nám 499k",
-    "xóa mụn thịt 50k",
-    "chăm sóc da Relax Skin 199k",
-    "triệt lông OPT 166k",
+    "Xóa xăm chân mày 299k",
+    "Tắm trắng whitening 699k",
+    "Xóa xăm hình nghệ thuật 99k",
+    "Phun môi 999k",
+    "Xóa nám 499k",
+    "Xóa mụn thịt 50k",
+    "Chăm sóc da Relax Skin 199k",
+    "Triệt lông OPT 166k",
   ];
   // var prizeName = prizeNames[prizeIndex];
 
@@ -67,6 +67,9 @@ function calcResult(deg) {
 
 function showResult(prize) {
   var resultElement = document.getElementById("result");
-  resultElement.innerText = "Chúc mừng bạn đã nhận được dịch vụ " + prize;
-  resultElement.style.display = "block";
+  const html = `
+    <p style="margin:0;">Chúc mừng bạn đã nhận được dịch vụ</p>
+    <p style="margin:0; padding-top:5px;">${prize}</p>
+  `;
+  resultElement.innerHTML = html;
 }
