@@ -35,7 +35,7 @@ body{
   
    }
    .logo img{
-    width:300px
+    width:280px
    }
    .title{
     display:block;
@@ -43,11 +43,11 @@ body{
     top:10px
    }
    .title img{
-    width: 68%;
+    width: 60%;
    }
    .spin__wrapper{
      position: absolute;
-     top:0px;
+     top: 20px;
      left:50%;
      transform: translateX(-45%);
    }
@@ -56,41 +56,72 @@ body{
   
    }
    .spin_container img{
-    width:1100px
+    width:700px
    }
    .spin {
     position: relative;
    }
    .spin_arrow{
     position: absolute;
-    top: 186px;
-    left:51.5%;
+    top: 54px;
+    left:52.9%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 58%;
+    width: 50%;
    }
    .footer_spin{
     
     position: absolute;
-    top:750px;
-    left:52%;
+    top:610px;
+    left:50%;
     transform: translateX(-50%);
     z-index: -100;
   }
   .footer_spin img{
-    width: 90%;
+    width: 100%;
   }
-  .notification{
+  .notification__child{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:90px;
-    left:54%;
-    transform: translateX(-50%);
+    top:50%;
+    left:0;
+    transform: translateY(-85%);
     color:rgb(164, 5, 5);
-    font-size: 34px;
+    font-size: 60px;
+    padding:60px 0px;
     font-weight: 700;
   }
+  .count{
+    text-align: center;
+    color:white;
+    position:absolute;
+    bottom:20px;
+    left:52%;
+    transform: translateX(-50%);
+  }
+  .count_button{ 
+    padding:20px 40px;
+    text-align: center;
+    background: rgb(164, 5, 5);
+    color:white;
+    outline: none;
+    border:none;
+    font-size: 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .count_title{
+    color: rgb(164, 5, 5);
+    text-align: center; 
+    font-size: 30px;
+    font-weight: 700;
+  }
+   
+  
    
 }
 @media only screen and (min-width:1200px) and (max-width:1499px) {
@@ -99,12 +130,7 @@ body{
     padding: 0;
     box-sizing: border-box;
    }
-   .title-bot{
-    display: none;
-   }
-  .title-top{
-    display: none;
-  }
+
   
    .m-game{
     position: relative;
@@ -125,16 +151,27 @@ body{
     width:200px
    }
    .title{
-    display:block;
-    position: absolute;
-    top:40px
+    display: none;
    }
-   .title img{
-    width: 50%;
+   .title-top{
+     position: absolute;
+     top:30px;
+     left:30px;
+   }
+   .title-top img{
+    width:250px;
+  }
+   .title-bot{
+    position: absolute;
+    bottom:70px;
+    left:20px;
+   }
+   .title-bot img{
+    width: 250px;
    }
    .spin__wrapper{
      position: absolute;
-     top:40px;
+     top:70px;
      left:50%;
      transform: translateX(-45%);
    }
@@ -143,39 +180,67 @@ body{
   
    }
    .spin_container img{
-    width:800px
+    width:580px
    }
    .spin {
     position: relative;
    }
    .spin_arrow{
     position: absolute;
-    top: 138px;
-    left:54%;
+    top: 45px;
+    left:54.1%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 34%;
+    width: 42%;
    }
    .footer_spin{
     
     position: absolute;
-    top:565px;
-    left:54%;
+    top:510px;
+    left:50%;
     transform: translateX(-50%);
     z-index: -100;
   }
   .footer_spin img{
-    width: 80%;
-  }
-  .notification{
     width: 100%;
+  }
+  .notification__child{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:80px;
-    left:54%;
-    transform: translateX(-50%);
+    top:43%;
+    left:0;
+    transform: translateY(-85%);
     color:rgb(164, 5, 5);
+    font-size: 46px;
+    padding:40px 0px;
+    font-weight: 700;
+  }
+  .count{
+    text-align: center;
+    color:white;
+    position:absolute;
+    bottom:100px;
+    left:52%;
+    transform: translateX(-50%);
+  }
+  .count_button{ 
+    padding:20px 40px;
+    text-align: center;
+    background: rgb(164, 5, 5);
+    color:white;
+    outline: none;
+    border:none;
+    font-size: 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .count_title{
+    color: rgb(164, 5, 5);
+    text-align: center; 
     font-size: 24px;
     font-weight: 700;
   }
@@ -188,12 +253,7 @@ body{
     padding: 0;
     box-sizing: border-box;
    }
-   .title-bot{
-    display: none;
-   }
-  .title-top{
-    display: none;
-  }
+
   
    .m-game{
     position: relative;
@@ -214,15 +274,27 @@ body{
     width:150px
    }
    .title{
-    position: absolute;
-    top:20px
+    display: none;
    }
-   .title img{
-    width: 60%;
+   .title-top{
+     position: absolute;
+     top:30px;
+     left:30px;
+   }
+   .title-top img{
+    width:200px;
+  }
+   .title-bot{
+    position: absolute;
+    bottom: 100px;
+    left:30px;
+   }
+   .title-bot img{
+    width: 200px;
    }
    .spin__wrapper{
      position: absolute;
-     top:20px;
+     top:100px;
      left:50%;
      transform: translateX(-45%);
    }
@@ -231,141 +303,71 @@ body{
   
    }
    .spin_container img{
-    width:640px
+    width:500px
    }
    .spin {
     position: relative;
    }
    .spin_arrow{
     position: absolute;
-    top: 105px;
-    left:54.9%;
-    transform: translateX(-50%);
-   }
-   .spin_arrow img{
-    width: 32%;
-   }
-   .footer_spin{
-    
-    position: absolute;
-    top:455px;
-    left:55.5%;
-    transform: translateX(-50%);
-    z-index: -100;
-  }
-  .footer_spin img{
-    width: 75%;
-  }
-  .notification{
-    width: 600px;
-    position:absolute;
-    text-align: center;
-    top:80px;
-    left:54%;
-    transform: translateX(-50%);
-    color:rgb(164, 5, 5);
-    font-size: 18px;
-    font-weight: 600;
-  }
-   
-}
-
-
-
-@media only screen and (max-width:480px){
-  .m-game{
-    position: relative;
-    overflow-y: hidden;
-   }
-  .nen{
-     width: 100%;
-     height:100vh ;
-  }
-  .logo {
-    position: absolute;
-    top: 10px;
-    right:20px;
-  
-   }
-   .logo img{
-    width:100px
-   }
-   .title{
-    display: none;
-   }
-   .title-top{
-     position: absolute;
-     top:30px;
-     left:10px;
-   }
-   .title-top img{
-    width:100px;
-  }
-   .title-bot{
-    position: absolute;
-    top:650px;
-    left:10px;
-   }
-   .title-bot img{
-    width: 100px;
-   }
-   .spin__wrapper{
-    position: absolute;
-    top:85px;
-    left:42%;
-    transform: translateX(-45%);
-  }
-  .spin_container{
-   transition: transform 5s ease-in-out;
- 
-  }
-  .spin_container img{
-   width:550px
-  }
-   .spin {
-    position: relative;
-   }
-   .spin_arrow{
-    position: absolute;
-    top: 96px;
+    top: 38px;
     left:55.4%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 26%;
+    width: 37%;
    }
    .footer_spin{
     
     position: absolute;
-    top:385px;
-    left:51.6%;
+    top:440px;
+    left:50%;
     transform: translateX(-50%);
     z-index: -100;
   }
   .footer_spin img{
-    width: 92%;
+    width: 100%;
   }
-  .chucmung{
-    position: absolute;
-    top :100px;
-    left: 52px;
-    text-align: center;
-    transform: translateX(-50%);
-    color:rgb(164, 5, 5);
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .notification{
-    text-align: center;
-    width: 350px;
+  .notification__child{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
-    top:120px;
-    left:52%;
-    transform: translateX(-50%);
+    text-align: center;
+    top:42%;
+    left:0;
+    transform: translateY(-85%);
     color:rgb(164, 5, 5);
-    font-size: 16px;
+    font-size: 38px;
+    padding:40px 0px;
     font-weight: 700;
   }
+  .count{
+    text-align: center;
+    color:white;
+    position:absolute;
+    bottom:160px;
+    left:52.5%;
+    transform: translateX(-50%);
+  }
+  .count_button{ 
+    padding:20px 40px;
+    text-align: center;
+    background: rgb(164, 5, 5);
+    color:white;
+    outline: none;
+    border:none;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .count_title{
+    color: rgb(164, 5, 5);
+    text-align: center; 
+    font-size: 22px;
+    font-weight: 700;
+  }
+   
 }
 
 @media only screen and (max-width:768px) and (min-width:481px){
@@ -392,10 +394,125 @@ body{
    .title-top{
      position: absolute;
      top:30px;
-     left:10px;
+     left:20px;
    }
    .title-top img{
-    width:120px;
+    width:150px;
+  }
+   .title-bot{
+    position: absolute;
+    bottom:60px;
+    left:10px;
+   }
+   .title-bot img{
+    width: 170px;
+   }
+   .spin__wrapper{
+    position: absolute;
+    top:140px;
+    left:48%;
+    transform: translateX(-45%);
+  }
+  .spin_container{
+   transition: transform 5s ease-in-out;
+ 
+  }
+  .spin_container img{
+   width:450px
+  }
+   .spin {
+    position: relative;
+   }
+   .spin_arrow{
+    position: absolute;
+    top: 37px;
+    left:56%;
+    transform: translateX(-50%);
+   }
+   .spin_arrow img{
+    width: 34%;
+   }
+   .footer_spin{
+    
+    position: absolute;
+    top:390px;
+    left:47%;
+    transform: translateX(-50%);
+    z-index: -100;
+  }
+  .footer_spin img{
+    width: 110%;
+  }
+  .notification__child{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position:absolute;
+    text-align: center;
+    top:43%;
+    left:0;
+    transform: translateY(-85%);
+    color:rgb(164, 5, 5);
+    font-size: 32px;
+    padding:40px 0px;
+    font-weight: 700;
+  }
+  .count{
+    text-align: center;
+    color:white;
+    position:absolute;
+    bottom: 180px;
+    left:52%;
+    transform: translateX(-50%);
+  }
+  .count_button{ 
+    padding:20px 20px;
+    text-align: center;
+    background: rgb(164, 5, 5);
+    color:white;
+    outline: none;
+    border:none;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .count_title{
+    color: rgb(164, 5, 5);
+    text-align: center; 
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+ 
+@media only screen and (max-width:480px){
+  
+  .m-game{
+    position: relative;
+    overflow-y: hidden;
+   }
+  .nen{
+     width: 100%;
+     height:100vh ;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    right:20px;
+  
+   }
+   .logo img{
+    width:100px
+   }
+   .title{
+    display: none;
+   }
+   .title-top{
+     position: absolute;
+     top:30px;
+     left:20px;
+   }
+   .title-top img{
+    width:100px;
   }
    .title-bot{
     position: absolute;
@@ -407,8 +524,8 @@ body{
    }
    .spin__wrapper{
     position: absolute;
-    top:170px;
-    left:48%;
+    top:85px;
+    left:45%;
     transform: translateX(-45%);
   }
   .spin_container{
@@ -416,41 +533,69 @@ body{
  
   }
   .spin_container img{
-   width:550px
+   width:360px
   }
    .spin {
     position: relative;
    }
    .spin_arrow{
     position: absolute;
-    top: 95px;
-    left:55.2%;
+    top: 29px;
+    left:58.8%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 30%;
+    width: 26%;
    }
    .footer_spin{
     
     position: absolute;
-    top:380px;
-    left:52.5%;
+    top:310px;
+    left:47.7%;
     transform: translateX(-50%);
     z-index: -100;
   }
   .footer_spin img{
-    width: 90%;
+    width: 110%;
   }
-  .notification{
-    text-align: center;
-    width: 500px;
+
+  .notification__child{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
-    left:52%;
-    top:200px;
-    transform: translateX(-50%);
+    text-align: center;
+    top:198px;
+    left:0;
     color:rgb(164, 5, 5);
+    font-size: 20px;
+    padding:45px 0px;
+    font-weight: 700;
+  }
+  .count{
+    text-align: center;
+    color:white;
+    position:absolute;
+    top: 500px;
+    left:49%;
+    transform: translateX(-50%);
+  }
+  .count_button{ 
+    padding:20px 20px;
+    text-align: center;
+    background: rgb(164, 5, 5);
+    color:white;
+    outline: none;
+    border:none;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .count_title{
+    color: rgb(164, 5, 5);
+    text-align: center; 
     font-size: 18px;
     font-weight: 700;
   }
 }
- 
+
