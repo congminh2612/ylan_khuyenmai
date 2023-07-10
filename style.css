@@ -409,8 +409,8 @@ body{
    }
    .spin__wrapper{
     position: absolute;
-    top:140px;
-    left:48%;
+    top:120px;
+    left:46%;
     transform: translateX(-45%);
   }
   .spin_container{
@@ -460,8 +460,8 @@ body{
     text-align: center;
     color:white;
     position:absolute;
-    bottom: 180px;
-    left:52%;
+    top: 650px;
+    left:50%;
     transform: translateX(-50%);
   }
   .count_button{ 
@@ -594,7 +594,7 @@ body{
   .count_title{
     color: rgb(164, 5, 5);
     text-align: center; 
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
   }
 }
