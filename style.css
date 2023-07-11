@@ -13,12 +13,7 @@ body{
     padding: 0;
     box-sizing: border-box;
    }
-   .title-bot{
-    display: none;
-   }
-  .title-top{
-    display: none;
-  }
+
    .m-game{
     position: relative;
     overflow-y: hidden;
@@ -38,12 +33,23 @@ body{
     width:280px
    }
    .title{
-    display:block;
-    position: absolute;
-    top:10px
+    display: none;
    }
-   .title img{
-    width: 60%;
+   .title-top{
+     position: absolute;
+     top:30px;
+     left:30px;
+   }
+   .title-top img{
+    width:300px;
+  }
+   .title-bot{
+    position: absolute;
+    bottom:80px;
+    left:0px;
+   }
+   .title-bot img{
+    width: 350px;
    }
    .spin__wrapper{
      position: absolute;
@@ -53,6 +59,8 @@ body{
    }
    .spin_container{
     transition: transform 5s ease-in-out;
+    height: 700px;
+    
   
    }
    .spin_container img{
@@ -86,7 +94,7 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:50%;
+    top:464px;
     left:0;
     transform: translateY(-85%);
     color:rgb(164, 5, 5);
@@ -98,8 +106,8 @@ body{
     text-align: center;
     color:white;
     position:absolute;
-    bottom:20px;
-    left:52%;
+    top:800px;
+    left:51.7%;
     transform: translateX(-50%);
   }
   .count_button{ 
@@ -171,12 +179,13 @@ body{
    }
    .spin__wrapper{
      position: absolute;
-     top:70px;
+     top:40px;
      left:50%;
      transform: translateX(-45%);
    }
    .spin_container{
     transition: transform 5s ease-in-out;
+    height:580px;
   
    }
    .spin_container img{
@@ -210,7 +219,7 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:43%;
+    top:390px;
     left:0;
     transform: translateY(-85%);
     color:rgb(164, 5, 5);
@@ -222,7 +231,7 @@ body{
     text-align: center;
     color:white;
     position:absolute;
-    bottom:100px;
+    top:700px;
     left:52%;
     transform: translateX(-50%);
   }
@@ -300,6 +309,7 @@ body{
    }
    .spin_container{
     transition: transform 5s ease-in-out;
+    height: 500px;
   
    }
    .spin_container img{
@@ -310,8 +320,8 @@ body{
    }
    .spin_arrow{
     position: absolute;
-    top: 38px;
-    left:55.4%;
+    top: 39px;
+    left:55.5%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
@@ -321,19 +331,19 @@ body{
     
     position: absolute;
     top:440px;
-    left:50%;
+    left:48%;
     transform: translateX(-50%);
     z-index: -100;
   }
   .footer_spin img{
-    width: 100%;
+    width: 110%;
   }
   .notification__child{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:42%;
+    top:410px;
     left:0;
     transform: translateY(-85%);
     color:rgb(164, 5, 5);
@@ -345,7 +355,7 @@ body{
     text-align: center;
     color:white;
     position:absolute;
-    bottom:160px;
+    top:750px;
     left:52.5%;
     transform: translateX(-50%);
   }
@@ -415,7 +425,7 @@ body{
   }
   .spin_container{
    transition: transform 5s ease-in-out;
- 
+   height:450px;
   }
   .spin_container img{
    width:450px
@@ -425,8 +435,8 @@ body{
    }
    .spin_arrow{
     position: absolute;
-    top: 37px;
-    left:56%;
+    top: 35px;
+    left:56.1%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
@@ -448,11 +458,11 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:43%;
+    top:400px;
     left:0;
     transform: translateY(-85%);
     color:rgb(164, 5, 5);
-    font-size: 32px;
+    font-size: 29px;
     padding:40px 0px;
     font-weight: 700;
   }
@@ -529,23 +539,26 @@ body{
     transform: translateX(-45%);
   }
   .spin_container{
-   transition: transform 5s ease-in-out;
+   height: 360px;
+   transition: transform 6s ease-in-out;
  
   }
   .spin_container img{
    width:360px
+   
   }
    .spin {
     position: relative;
    }
    .spin_arrow{
+    
     position: absolute;
-    top: 29px;
-    left:58.8%;
+    top: 26px;
+    left:58.5%;
     transform: translateX(-50%);
    }
    .spin_arrow img{
-    width: 26%;
+    width: 28%;
    }
    .footer_spin{
     
@@ -564,7 +577,7 @@ body{
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
     text-align: center;
-    top:198px;
+    top:192px;
     left:0;
     color:rgb(164, 5, 5);
     font-size: 20px;
