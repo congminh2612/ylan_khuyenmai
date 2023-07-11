@@ -540,7 +540,7 @@ body{
   }
   .spin_container{
    height: 360px;
-   transition: transform 6s ease-in-out;
+   transition: transform 5s ease-in-out;
  
   }
   .spin_container img{
